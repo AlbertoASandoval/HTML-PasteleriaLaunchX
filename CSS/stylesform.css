@@ -1,0 +1,90 @@
+:root{
+    --main-color:#fad643;
+    --black:#13131a;
+    --bg:azure;
+    
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 100.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--bg);
+}
+
+.header{
+    background: var(--bg);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: var(--border);
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color:#fad643;
+}
+
+.header .navbar a:hover{
+    color:#76520e;
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/*Tablas*/
+table, th td{
+    text-align: center;
+    position:absolute;
+    border: 3px solid #a47e1b;
+    border-collapse: collapse;
+    padding: 9px;
+    /*border-spacing: 9px;**/
+}
+
+.bitacora .caption{
+    color: #c9184a;
+    font-family: 'Trocchi,serif';
+    font-size: 30px;
+    line-height: 60 px;
+}
+.bitacora th{
+    color: azure;
+    background-color: black;
+}
+/*Propiedad CSS para modificar renglones pares*/
+/* even = pares odd = impares*/
+tr:nth-child(even){
+    background-color: #b69121;
+}
+tr:nth-child(odd){
+    background-color: #fad643;
+}
+
+/*Forms*/
+.home{
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}

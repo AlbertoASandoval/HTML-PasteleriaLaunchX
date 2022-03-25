@@ -1,0 +1,81 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    background-color: azure;
+}
+/*Header*/
+header{
+    color: azure;
+    text-align: center;
+    font-size: 23px; 
+    padding: 3px;
+    margin: 3px;
+    background:#a47e1b;
+   
+}
+
+/*Posicion Div*/
+.parent{
+    display:grid;
+    grid-template-columns: 18% 51% 33%;
+    grid-template-rows: repeat(2,if);
+    grid-column-gap:2px;
+    grid-row-gap: 3px;
+}
+
+    .div .menu{
+    grid-area: 1/ 1 /2 /2;}
+
+    .div .location{  
+    grid-area: 1/ 2 /2 /3;}
+
+    .div .image{
+    grid-area: 1/ 3 /2 /4;}
+
+    .div .map{
+    grid-area: 2 /1 /3 /4;}
+
+/*Imagen*/
+img{
+    align-items:center;
+}
+
+/*Div menu */
+
+.menu a{
+    background-color: #a47e1b;
+    border-radius: 9px 0 9px 0;
+    color: azure;
+    margin: 6px; padding: 6px;
+    text-decoration: none;
+    display: block;
+}
+
+.div .location{
+    border-radius: 3px;
+    color: #fad643;
+    box-shadow: 1px 0 4px rgb(0, 0, 0, .2 ) ;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px 1px;
+    border-color: black;
+
+}
+
+.div .image{
+    align-items: stretch;
+    background-color: black;
+    display: flex;
+    height: 100%;
+}
+
+p{
+    text-align: center;
+    color: #805b10;
+    font-size: 22px;
+}
+
+a:hover{
+    background-color: #ffe169;
+    color:black;
+}
